@@ -3,6 +3,7 @@
 
 AC_PREREQ([2.69])
 AC_INIT(cweb, alpha, changeme@cweb.com)
+AM_INIT_AUTOMAKE(cweb, alpha)
 AC_CONFIG_SRCDIR([src/scratch.h])
 AC_CONFIG_HEADERS([config.h])
 
@@ -19,4 +20,4 @@ AC_PROG_CC
 
 AC_CONFIG_FILES([Makefile
                  src/Makefile])
-AC_OUTPUT
+AC_OUTPUT(Makefile src/Makefile)
