@@ -1,9 +1,11 @@
-autoscan() => autoscan.log,configure.scan => configure.ac
+autoscan() => autom4te.cache,autoscan.log,configure.scan => configure.ac
 
-autoheader(configure.ac) => autom4te.cache, autoscan.log, config.h.in
+autoheader(configure.ac) => config.h.in
+
+aclocal => aclocal.m4
+
+automake(configure.ac, aclocal.m4)
 
 autoconf(configure.ac) => configure.in, config.log, configure
 
 configure => config.status
-
-automake(configure.ac, aclocal.m4)
