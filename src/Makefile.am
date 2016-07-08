@@ -1,4 +1,4 @@
 AM_CFLAGS= -Wall
 
-bin_PROGRAMS = cweb
-cweb_SOURCES = scratch.c scratch.h
+bin_PROGRAMS = examplecprj
+examplecprj_SOURCES = main.c struct.h

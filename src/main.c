@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include"scratch.h"
+#include"struct.h"
 
 int main() {
 	printf("\nHello there!\n");

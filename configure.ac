@@ -1,10 +1,10 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-AC_PREREQ([2.69])
-AC_INIT(cweb, alpha, changeme@cweb.com)
-AM_INIT_AUTOMAKE(cweb, alpha)
-AC_CONFIG_SRCDIR(src/scratch.h)
+AC_PREREQ(2.69)
+AC_INIT(cprjexample, alpha, changeme@cprjexample.com)
+AM_INIT_AUTOMAKE(cprjexample, alpha)
+AC_CONFIG_SRCDIR(src/struct.h)
 AC_CONFIG_HEADERS(config.h)
 
 # Checks for programs.
