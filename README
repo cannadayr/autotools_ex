@@ -4,8 +4,13 @@ autoheader(configure.ac) => config.h.in
 
 aclocal => aclocal.m4
 
-automake(configure.ac, aclocal.m4)
+automake(config.h.in, configure.ac, aclocal.m4) [--add-missing] =>
+*Makefile.in, compile, depcomp, install-sh, missing
 
-autoconf(configure.ac) => configure.in, config.log, configure
+autoconf(configure.ac, [automake output]) => configure
 
-configure => config.status
+configure =>
+*Makefile, config.h, config.log, config.status, */.deps/, stamp-*
+
+make(Makefile) =>
+config.h.in~, binaries, objects
