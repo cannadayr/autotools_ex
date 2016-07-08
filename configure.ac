@@ -11,6 +11,7 @@ AC_CONFIG_HEADERS(config.h)
 AC_PROG_CC
 
 # Checks for libraries.
+PKG_CHECK_MODULES([CURL], [libcurl])
 
 # Checks for header files.
 
