@@ -17,6 +17,12 @@ config.h.in~, binaries, objects
 
 make dist => project-version.tar.gz
 
+AUTOTOOLS BOOTSTRAPPING
+-----------------------
+tar xzf project-version.tar.gz &&
+cd project-version &&
+cp -r $prev-prj-dir/.git ./
+
 COPYPASTA
 ---------
 autoscan && autoheader && aclocal && automake --add-missing && autoconf && ./configure
