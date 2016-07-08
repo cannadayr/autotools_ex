@@ -1,1 +1,10 @@
 *.swp
+Makefile
+config.h
+config.log
+config.status
+src/.deps/
+src/Makefile
+stamp-h1
+src/cweb
+src/scratch.o
