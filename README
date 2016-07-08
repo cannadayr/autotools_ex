@@ -1,0 +1,9 @@
+autoscan() => autoscan.log,configure.scan => configure.ac
+
+autoheader(configure.ac) => autom4te.cache, autoscan.log, config.h.in
+
+autoconf(configure.ac) => configure.in, config.log, configure
+
+configure => config.status
+
+automake(configure.ac, aclocal.m4)
