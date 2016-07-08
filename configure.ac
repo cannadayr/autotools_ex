@@ -4,8 +4,8 @@
 AC_PREREQ([2.69])
 AC_INIT(cweb, alpha, changeme@cweb.com)
 AM_INIT_AUTOMAKE(cweb, alpha)
-AC_CONFIG_SRCDIR([src/scratch.h])
-AC_CONFIG_HEADERS([config.h])
+AC_CONFIG_SRCDIR(src/scratch.h)
+AC_CONFIG_HEADERS(config.h)
 
 # Checks for programs.
 AC_PROG_CC
@@ -18,6 +18,6 @@ AC_PROG_CC
 
 # Checks for library functions.
 
-AC_CONFIG_FILES([Makefile
-                 src/Makefile])
-AC_OUTPUT(Makefile src/Makefile)
+AC_CONFIG_FILES(Makefile
+                 src/Makefile)
+AC_OUTPUT
