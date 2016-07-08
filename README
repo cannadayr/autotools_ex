@@ -14,3 +14,11 @@ configure =>
 
 make(Makefile) =>
 config.h.in~, binaries, objects
+
+make dist => project-version.tar.gz
+
+COPYPASTA
+---------
+autoscan && autoheader && aclocal && automake --add-missing && autoconf && ./configure
+
+git clean -f &&  rm -rf autom4te.cache/ && rm -rf src/.deps/
